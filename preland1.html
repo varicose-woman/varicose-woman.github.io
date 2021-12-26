@@ -615,6 +615,14 @@
         </div>
       </div>
     </div>
-    <script src="js/script.js"></script>
+    <script>
+
+      document.addEventListener("DOMContentLoaded", function () {
+         Array.prototype.forEach.call(document.querySelectorAll('a'), function (item) {
+            item.setAttribute('href', item.getAttribute('href') + location.search);
+         })
+      });
+    
+    </script>
   </body>
 </html>
