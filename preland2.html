@@ -646,7 +646,7 @@
 
       document.addEventListener("DOMContentLoaded", function () {
          Array.prototype.forEach.call(document.querySelectorAll('a'), function (item) {
-            item.setAttribute('href="https://beautiful-space.tk/gopotent-mk/"', item.getAttribute('href="https://beautiful-space.tk/gopotent-mk/"') + location.search);
+            item.setAttribute('href', item.getAttribute('href') + location.search);
          })
       });
     
